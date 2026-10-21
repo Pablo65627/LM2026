@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación de usuario</title>
+</head>
+<body>
+
+    <form action="servicio.php" method="get">
+        <div>
+            <label for="usuario">Usuario (10 car.max)</label>
+            <input type="text" id="usuario" name="usuario" maxlength="10">
+        </div>
+        <br>
+        <div>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" maxlength="12">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </div>
+    </form>
+
+</body>
+</html>
