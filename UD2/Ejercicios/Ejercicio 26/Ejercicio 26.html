@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+   
+</head>
+<body>
+
+    <p>Vamos a probar diferentes valores de <em>type</em> de HTML5 para la etiqueta <em>input</em></p>
+
+    <form action="validar.php" method="get">
+
+        <fieldset>
+            <legend>Para datos personales</legend>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" size="9" placeholder="9 números" autocomplete="on" pattern="[0-9]{9}">
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" size="50" placeholder="El formato correcto es nombre+@+servidor de correo" autocomplete="on">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Para valores numéricos</legend>
+            <div>
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" step="1" value="1">
+            </div>
+            <div>
+                <label for="puntuacion">Mueva la barra para indicar puntuación (Del 1 a 10)</label>
+                <input type="range" id="puntuacion" name="puntuacion" min="1" max="10" step="1" value="0">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Url y búsqueda</legend>
+            <div>
+                <label for="url">Url de tu sitio</label>
+                <input type="url" id="url" name="url">
+            </div>
+            <div>
+                <label for="buscar">¿Qué te interesa buscar?</label>
+                <input type="search" id="buscar" name="buscar">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Otros tipos</legend>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" id="color" name="color" value="#000000">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Para Fechas</legend>
+            <div>
+                <label for="dia">Seleccione un día (Hasta fin de año):</label>
+                <input type="date" id="dia" name="dia">
+            </div>
+            <div>
+                <label for="hora">Seleccione una hora:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+            <div>
+                <label for="mes">Seleccione un mes (Hasta junio del 2020):</label>
+                <input type="month" id="mes" name="mes">
+            </div>
+            <div>
+                <label for="semana">Seleccione una semana (Hasta junio del 2020):</label>
+                <input type="week" id="semana" name="semana">
+            </div>
+            <div>
+                <label for="fechahora">Seleccione fecha y hora:</label>
+                <input type="datetime-local" id="fechahora" name="fechahora">
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">
+                <img src="aceptar_50_50.png" alt="Validar" width="50" height="50"> Validar
+            </button>
+
+            <button type="submit" formaction="nueva_validacion.php">
+                <img src="aceptar_50_50.png" alt="Nueva Validación" width="50" height="50"> Nueva validación
+            </button>
+
+            <button type="reset">
+                <img src="limpiar_50_50.jpg" alt="Limpiar" width="50" height="50"> Limpiar
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>
