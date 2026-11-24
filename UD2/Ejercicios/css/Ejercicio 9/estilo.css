@@ -1,0 +1,29 @@
+form { 
+    width: 800px; 
+    background-color: SlateGray; 
+    border: 2px solid LightSteelBlue; 
+    font-size: 12px; 
+    font-family: "Comic Sans MS"; 
+}
+
+legend::first-letter { 
+    background-color: rgb(249, 106, 27); 
+    font-size: 20px; 
+}
+
+input:focus { 
+    background-color: lightgreen; 
+}
+
+textarea:focus:hover { 
+    background-color: lightblue; 
+}
+
+input[type="radio"]:disabled { 
+    background-color: #ddd; 
+}
+
+input[type="submit"]:active { 
+    background-color: green; 
+    color: white; 
+}
